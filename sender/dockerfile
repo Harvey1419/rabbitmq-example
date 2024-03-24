@@ -1,0 +1,9 @@
+FROM node:14-alpine
+
+WORKDIR /sender
+
+COPY . .
+
+RUN npm install
+
+CMD ["node", "./send.js"]
